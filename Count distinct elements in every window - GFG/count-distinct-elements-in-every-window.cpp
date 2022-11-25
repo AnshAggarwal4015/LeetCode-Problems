@@ -17,7 +17,7 @@ class Solution{
             if( mp.find(A[i]) == mp.end() ){
                 distinct++;
             }
-            mp[A[i]]++;
+               mp[A[i]]++;
         }
         int index = 0;
         Ans.push_back(distinct);
@@ -35,10 +35,7 @@ class Solution{
             Ans.push_back(distinct);
             prevElement = A[index++];
         }
-        // for( auto i : Ans ){
-        //     cout<<i<<" ";
-        // }
-        // cout<<endl;
+
         return Ans;
     }
 };
